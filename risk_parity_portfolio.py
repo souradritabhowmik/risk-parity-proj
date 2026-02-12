@@ -1,5 +1,3 @@
-# risk_parity_portfolio.py
-
 import numpy as np
 import pandas as pd
 import yfinance as yf
@@ -12,7 +10,7 @@ class RiskParityPortfolio:
         :param tickers: List of stock tickers or ETFs
         :param start_date: Start date (YYYY-MM-DD)
         :param end_date: End date (YYYY-MM-DD)
-        :param initial_capital: Starting capital
+        :param initial_capital: starting capital
         """
         self.tickers = tickers
         self.start_date = start_date
@@ -74,8 +72,7 @@ class RiskParityPortfolio:
         }
 
 if __name__ == "__main__":
-    # Example usage
-    tickers = ['SPY', 'AGG', 'GLD']  # Stocks, Bonds, Gold
+    tickers = ['SPY', 'AGG', 'GLD']
     start_date = '2020-01-01'
     end_date = '2023-01-01'
 
